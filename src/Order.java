@@ -1,3 +1,5 @@
+import java.util.Set;
+
 //TODO 订单类
 public class Order {     //订单类
     private String id;             //ID
@@ -8,8 +10,8 @@ public class Order {     //订单类
     private float jptgx;           //机票退改险
     private float yhq;             //优惠券
     private float hszj;            //含税总价
-    private Customer customers[];
-
+    //private Customer customers[];  //数组的形式
+    private Set<Customer> customersSet;   //采用集合的形式 ——> 泛型
 
 
     //TODO Getter and Setter
@@ -77,11 +79,11 @@ public class Order {     //订单类
         this.hszj = hszj;
     }
 
-    public Customer[] getCustomers() {
-        return customers;
+    public Set<Customer> getCustomersSet() {
+        return customersSet;
     }
 
-    public void setCustomers(Customer[] customers) {
-        this.customers = customers;
+    public void setCustomersSet(Set<Customer> customersSet) {
+        this.customersSet = customersSet;
     }
 }
