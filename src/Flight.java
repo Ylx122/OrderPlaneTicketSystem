@@ -1,10 +1,13 @@
-public class Flight {
+//TODO 航班信息类
+public class Flight {        //飞行详情类
     private String id;                   //ID
     private String planeType;            // 飞机类型
     private String departureAirport;     // 出发机场
     private String destinationAirport;   // 目的机场
     private String departureTime;        // 起飞时间
 
+
+    //TODO Getter and Setter
     public String getId() {
         return id;
     }
