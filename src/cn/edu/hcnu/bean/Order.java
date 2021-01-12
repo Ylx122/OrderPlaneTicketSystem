@@ -1,3 +1,5 @@
+package cn.edu.hcnu.bean;
+
 import java.util.Set;
 
 //TODO 订单类
